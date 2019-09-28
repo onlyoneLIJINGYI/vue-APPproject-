@@ -1,0 +1,17 @@
+/*1.webpack只能打包处理JS文件，处理非JS文件需要第三方loader加载器来完成
+2.处理css文件需要安装cnpm i style-loader  css-loader -D，处理less文件也要安装less-loader加载器和less工具cnpm i less -D
+3.在webpack.config.js中配置第三方加载器
+*/
+li{
+list-style-type: none;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background: url("../images/壁纸.jpg");/*默认情况下webpack无法处理CSS文件中的URL地址，需要安装url-loader file-loader*/
+
+}
+.div-border{
+    margin:5px 20px;
+    border: 1px dotted deepskyblue;
+}
